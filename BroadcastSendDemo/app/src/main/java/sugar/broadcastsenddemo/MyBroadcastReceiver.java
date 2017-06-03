@@ -11,6 +11,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "received in MyBroadcastRecever", Toast.LENGTH_SHORT).show();;
+        Toast.makeText(context, "received in MyBroadcastRecever", Toast.LENGTH_SHORT).show();
+        abortBroadcast();//表示不允许传递
     }
 }

@@ -17,8 +17,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent("sugar.BroadcastSendDemo.MY_BROADCAST");
-                sendBroadcast(intent);
+//                sendBroadcast(intent);
+
+                //有序广播
+                sendOrderedBroadcast(intent,null);
             }
-        });
+       });
     }
 }
